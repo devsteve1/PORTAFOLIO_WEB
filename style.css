@@ -31,9 +31,11 @@ body{
     z-index: 2;
     text-align: center;
  
-    
-   
  
+}
+
+.header__container-logo a{
+    text-decoration: none;
 }
 
 /*Header Logo*/
