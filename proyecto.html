@@ -17,26 +17,25 @@
 <body>
     <header class="header">
         <div class="header__container-logo">
-            <a href="index.html#home-wrapper"><h1 class="header__logo"><span>Dev</span> Esteban Molina<span>.</span></h1></a>
+            <a href="#" id="enlace-inicio"><h1 class="header__logo"><span>Dev</span> Esteban Molina<span>.</span></h1></a>
         </div>
         <input type="checkbox" class="header__checkbox" id="menu-toggle">
-        <label id="toggle-menu" for="menu-toggle" class="header__menu-nav-buttom" role="button"><i
-                class="fa-solid fa-bars"></i></label>
+        <label id="toggle-menu" for="menu-toggle" class="header__menu-nav-buttom" role="button"><i class="fa-solid fa-bars"></i></label>
         <nav class="header__nav">
             <ul class="header__nav__list" id="header__nav__list">
-                <li class="header__nav__item"><a href="index.html#home-wrapper">Inicio</a></li>
-                <li class="header__nav__item"><a href="index.html#about-wrapper">Sobre Mi</a></li>
-                <li class="header__nav__item"><a href="index.html#proyects-wrapper">Proyectos</a></li>
-                <li class="header__nav__item"><a href="index.html#contact-wrappe">Contacto</a></li>
+                <li class="header__nav__item"><a href="#" class="nav-link" data-target="index.html#home-wrapper">Inicio</a></li>
+                <li class="header__nav__item"><a href="#" class="nav-link" data-target="index.html#about-wrapper">Sobre Mi</a></li>
+                <li class="header__nav__item"><a href="#" class="nav-link" data-target="index.html#proyects-wrapper">Proyectos</a></li>
+                <li class="header__nav__item"><a href="#" class="nav-link" data-target="index.html#contact-wrappe">Contacto</a></li>
             </ul>
         </nav>
         <div class="header__redes-sociales">
-            <a target="_blank" href="https://www.linkedin.com/in/esteban-molina-5342972a3/"><i
-                    class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/esteban-molina-5342972a3/"><i class="fa-brands fa-linkedin"></i></a>
             <a target="_blank" href="https://github.com/devsteve1"><i class="fa-brands fa-github"></i></a>
             <a target="_blank" href="https://wa.me/5513612613"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </header>
+    
 
     <main class="main">
         <section class="proyect-wrapper-1">
@@ -126,5 +125,8 @@
         </section>
     </main>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
 </html>
