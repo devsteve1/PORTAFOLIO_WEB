@@ -19,7 +19,7 @@
 <body>
     <header class="header">
         <div class="header__container-logo">
-           <a href="#home-wrapper"><h1 class="header__logo"><span>Dev</span> Esteban Molina<span>.</span></h1></a>
+            <h1 class="header__logo"><span>Dev</span> Esteban Molina<span>.</span></h1>
         </div>
         <input type="checkbox" class="header__checkbox" id="menu-toggle">
         <label id="toggle-menu" for="menu-toggle" class="header__menu-nav-buttom" role="button"><i
@@ -135,7 +135,7 @@
             <h2 class="proyects__title">Proyectos</h2>
             <div class="proyects__container-cards">
                 <div class="card">
-                    <a href="#" id="enlace-proyecto"><img class="card__image card__image-1" src="assets/CAPTURA1.png" alt=""></a>
+                    <img class="card__image card__image-1" src="assets/serbicio2.png" alt="">
                     <div class="card__description">
                         <h2 class="card__description-title">Registro de control de centros SICT</h2>
                         <p>Proyecto realizado durante el Servicio Social</p>
@@ -147,11 +147,8 @@
                         <p class="card__tecnologias">HTML, CSS, Javascript, Bootstrap, PosgreSQL y Codeneiter 4 </p>
                     </div>
                 </div>
-                <div id="contenido-proyecto">
-                    <!--AQUI SE CARGA EL CONTENEDIDO DE MI PROYECTO DEL SERVICIO -->
-                </div>
                 <div class="card">
-                    <a href=""><img class="card__image" src="assets/PORTAFOLIO_WEB1.png" alt=""></a>
+                    <img class="card__image" src="assets/PORTAFOLIO_WEB1.png" alt="">
                     <div class="card__description">
                         <h2 class="card__description-title">Pagina web Personal</h2>
                         <p>Página web creada con el fin de enseñar mis conocimientos de desarrollo web. A través de él
@@ -188,8 +185,34 @@
     <footer>
 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+
+
+    <script>
+        document.querySelectorAll('.header__nav__list a').forEach(enlace => {
+            enlace.addEventListener('click', function () {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+
+
+        const navLinks = document.querySelectorAll('.header__nav__item a');
+
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+
+                navLinks.forEach(link => link.classList.remove('active'));
+
+
+                this.classList.add('active');
+            });
+        });
+    </script>
 
 </body>
 

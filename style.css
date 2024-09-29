@@ -31,11 +31,9 @@ body{
     z-index: 2;
     text-align: center;
  
+    
+   
  
-}
-
-.header__container-logo a{
-    text-decoration: none;
 }
 
 /*Header Logo*/
@@ -947,11 +945,6 @@ font-size: 1em;
 .card__image{
     max-width: 100%;
 }
-
-.card__image:hover{
-    opacity: 0.8;
-}
-
 
 .card__image-1{
     opacity: .93;
